@@ -13,19 +13,16 @@ let user1 = new User({
 
 })
 
+User.create(user1)
+    .then(users => {
+        console.log('Saved User', users)
+    })
+
 ////Seeds for Movie model
 
-let movie1 = new Movie ({
+let movie1 = [
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
-})
-
-let movie2 = new Movie ({
+    {
 
     title: 'Space Jam',
     img: '',
@@ -34,93 +31,90 @@ let movie2 = new Movie ({
     rating: 5,
     genre: 'Sci-fi'
 
-})
+    },
 
-let movie3 = new Movie ({
+    {
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-})
+    {
 
-let movie4 = new Movie ({
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
+    {
 
-})
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-let movie5 = new Movie ({
+    {
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-})
+    {
 
-let movie6 = new Movie ({
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
+    {
 
-})
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-let movie7 = new Movie ({
+    {
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
+        title: 'Space Jam',
+        img: '',
+        actors: 'Michael Jordan',
+        description: 'Michael Jordan being fye',
+        rating: 5,
+        genre: 'Sci-fi'
+    
+    },
 
-})
+]
 
-let movie8 = new Movie ({
 
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
-
-})
-
-let movie9 = new Movie ({
-
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
-
-})
-
-let movie10 = new Movie ({
-
-    title: 'Space Jam',
-    img: '',
-    actors: 'Michael Jordan',
-    description: 'Michael Jordan being fye',
-    rating: 5,
-    genre: 'Sci-fi'
-
-})
+Movie.create(movie1)
+    .then(movies => {
+        console.log('Saved Movies', movies)
+    })
 
