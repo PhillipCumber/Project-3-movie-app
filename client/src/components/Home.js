@@ -30,6 +30,8 @@ class Home extends Component {
     render() {
         return (
             <div>
+
+                <h1>hey watup</h1>
                 
                 {this.state.movies.map((movie) => (
 
