@@ -8,6 +8,7 @@ let Movie = new Schema ({
     actors: String,
     description: String,
     rating: Number,
+    genre: String
 
 })
 

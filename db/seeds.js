@@ -21,7 +21,8 @@ let movie1 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
 })
 
 let movie2 = new Movie ({
@@ -30,7 +31,9 @@ let movie2 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie3 = new Movie ({
@@ -39,7 +42,9 @@ let movie3 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie4 = new Movie ({
@@ -48,7 +53,9 @@ let movie4 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie5 = new Movie ({
@@ -57,7 +64,9 @@ let movie5 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie6 = new Movie ({
@@ -66,7 +75,9 @@ let movie6 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie7 = new Movie ({
@@ -75,7 +86,9 @@ let movie7 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie8 = new Movie ({
@@ -84,7 +97,9 @@ let movie8 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie9 = new Movie ({
@@ -93,7 +108,9 @@ let movie9 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
 let movie10 = new Movie ({
@@ -102,6 +119,8 @@ let movie10 = new Movie ({
     img: '',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
-    rating: 5
+    rating: 5,
+    genre: 'Sci-fi'
+
 })
 
