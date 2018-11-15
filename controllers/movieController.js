@@ -9,6 +9,16 @@ let movieController = {
 
                 res.send(movies)
             })
+    },
+
+    create: (req, res) => {
+
+        Movie.create(req.body)
+              .then((newMovie) => {
+
+                newMovie.save()
+                res.redirect(`/movies`)
+              })
     }
 }
 
