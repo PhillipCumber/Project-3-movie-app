@@ -18,7 +18,7 @@ class Home extends Component {
 
                 console.log(res)
                 this.setState({movies: res.data})
-                console.log(this.state.movies)
+                console.log(this.state.movies[0])
              })
     }
 
@@ -30,12 +30,16 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Watup</h1>
+                
+                {this.state.movies.map((movie) => (
 
-                {this.state.movies.map((movie) => {
-                    
+                    <div>
+
                         {movie.title}
-                })}
+                    </div>
+                 
+                ))}
+
             </div>
         );
     }
