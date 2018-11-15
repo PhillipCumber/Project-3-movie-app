@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
+
 
 class Home extends Component {
 
@@ -16,6 +18,7 @@ class Home extends Component {
 
                 console.log(res)
                 this.setState({movies: res.data})
+                console.log(this.state.movies)
              })
     }
 
@@ -27,13 +30,12 @@ class Home extends Component {
     render() {
         return (
             <div>
-                {/* <h1>Watup</h1>
+                <h1>Watup</h1>
 
-                {this.state.users.map((movie, i) => {
-
-                       {movie.name}
+                {this.state.movies.map((movie) => {
                     
-                })} */}
+                        {movie.title}
+                })}
             </div>
         );
     }
