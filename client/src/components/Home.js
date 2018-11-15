@@ -31,7 +31,7 @@ class Home extends Component {
         return (
             <div>
 
-                <h1>hey watup</h1>
+                <h1>hey watup fool</h1>
                 
                 {this.state.movies.map((movie) => (
 
