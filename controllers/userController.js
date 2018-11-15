@@ -14,6 +14,16 @@ let userController = {
 
                 res.send(user)
             })
+    },
+
+    create: (req, res) => {
+
+        User.create(req.body)
+              .then((newUser) => {
+
+                newUser.save()
+                res.redirect(`/members`)
+              })
     }
 }
 
