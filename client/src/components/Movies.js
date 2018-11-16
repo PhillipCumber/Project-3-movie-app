@@ -8,13 +8,19 @@ let MovieStyle = styled.div`
     display: flex;
     font-size: 25px;
     border: rigid;
-    background: blue;
+   
 
 `
 
 let IndyMovie = styled.div`
 
       margin-top: 40px;
+`
+
+let PicSize = styled.img`
+
+        height: 50px;
+        width: 50px;
 `
 
 class Movies extends Component {
@@ -51,7 +57,7 @@ class Movies extends Component {
 
                             <IndyMovie>
                                 <div>
-                                    {movie.img}
+                                <img src={movie.img} />
                                 </div>
 
                                 <div key={movie._id}>

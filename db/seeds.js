@@ -25,7 +25,7 @@ let movie1 = [
     {
 
     title: 'Space Jam',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/91joK1LrCiL._RI_.jpg',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/512V2D7TFRL._SY445_.jpg',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
     rating: 5,
@@ -36,7 +36,7 @@ let movie1 = [
     {
 
         title: 'Coach Carter',
-        img: 'https://m.media-amazon.com/images/M/MV5BNWYxZWFiNTItN2FkNS00ZDJmLWE1MWItYjMyMTgyOTI4MmQ4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/51DIauCpD2L._SY355_.jpg',
         actors: 'Samuel Jackson',
         description: 'Sam Jackson yelling',
         rating: 5,
@@ -69,7 +69,7 @@ let movie1 = [
     {
 
         title: 'Air Bud',
-        img: 'https://m.media-amazon.com/images/M/MV5BMzQxODE4MzEyNF5BMl5BanBnXkFtZTgwNjk2OTY4ODE@._V1_.jpg',
+        img: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Air_bud_poster.jpg/185px-Air_bud_poster.jpg',
         actors: 'A dog',
         description: 'A dog is an athlete',
         rating: 5,
