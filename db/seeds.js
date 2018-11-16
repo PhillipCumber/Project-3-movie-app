@@ -25,7 +25,7 @@ let movie1 = [
     {
 
     title: 'Space Jam',
-    img: '',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/91joK1LrCiL._RI_.jpg',
     actors: 'Michael Jordan',
     description: 'Michael Jordan being fye',
     rating: 5,
@@ -36,7 +36,7 @@ let movie1 = [
     {
 
         title: 'Coach Carter',
-        img: '',
+        img: 'https://m.media-amazon.com/images/M/MV5BNWYxZWFiNTItN2FkNS00ZDJmLWE1MWItYjMyMTgyOTI4MmQ4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg',
         actors: 'Samuel Jackson',
         description: 'Sam Jackson yelling',
         rating: 5,
@@ -47,7 +47,7 @@ let movie1 = [
     {
 
         title: 'Blue Hill Avenue',
-        img: '',
+        img: 'https://m.media-amazon.com/images/M/MV5BMTU0MTUwMjM3Ml5BMl5BanBnXkFtZTgwMTc2NjgwMzE@._V1_.jpg',
         actors: 'Guy from that tyler perry show',
         description: 'BET Classic',
         rating: 4,
@@ -58,7 +58,7 @@ let movie1 = [
     {
 
         title: 'Freddy v Jason',
-        img: '',
+        img: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Freddy_vs._Jason_movie.jpg/220px-Freddy_vs._Jason_movie.jpg',
         actors: 'The guy with the mask',
         description: 'Freddy fighting Jason',
         rating: 4,
@@ -69,7 +69,7 @@ let movie1 = [
     {
 
         title: 'Air Bud',
-        img: '',
+        img: 'https://m.media-amazon.com/images/M/MV5BMzQxODE4MzEyNF5BMl5BanBnXkFtZTgwNjk2OTY4ODE@._V1_.jpg',
         actors: 'A dog',
         description: 'A dog is an athlete',
         rating: 5,
@@ -80,7 +80,7 @@ let movie1 = [
     {
 
         title: 'The Ring',
-        img: '',
+        img: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Theringpostere.jpg/220px-Theringpostere.jpg',
         actors: 'Lil girl in the tv',
         description: 'Jump the girl as she is coming out of the tv',
         rating: 5,
@@ -91,7 +91,7 @@ let movie1 = [
     {
 
         title: 'Land before Time',
-        img: '',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/51GJAB%2BRhbL._SX342_.jpg',
         actors: 'Dinosaurs',
         description: 'More dinosaurs',
         rating: 5,
@@ -102,7 +102,7 @@ let movie1 = [
     {
 
         title: 'More than a Game',
-        img: '',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/51kkRLiZxvL._SY445_.jpg',
         actors: 'Lebron James',
         description: 'Lebron being fye',
         rating: 5,

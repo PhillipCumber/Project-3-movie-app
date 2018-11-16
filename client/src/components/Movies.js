@@ -49,7 +49,7 @@ class Movies extends Component {
 
                     <MovieStyle key={movie._id}>
 
-                        {movie.title}
+                        {movie.genre}
                     </MovieStyle>
                  
                 ))}
