@@ -14,7 +14,7 @@ let MovieStyle = styled.div`
 
 let IndyMovie = styled.div`
 
-      margin-top: 10px;
+      margin-top: 40px;
 `
 
 class Movies extends Component {
@@ -50,13 +50,27 @@ class Movies extends Component {
                     <MovieStyle className="big-contain">
 
                             <IndyMovie>
-                                    {movie.title}
-                            
+                                <div>
+                                    {movie.img}
+                                </div>
 
                                 <div key={movie._id}>
+                                        {movie.title}
+                                </div>
 
+                                <div>
                                     {movie.genre}
                                 </div>
+
+                                <div>
+                                    {movie.description}
+                                </div>
+
+                                <div>
+                                    {movie.rating}
+                                </div>
+
+                                <button>Add</button>
                             </IndyMovie>
 
 
