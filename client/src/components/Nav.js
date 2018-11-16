@@ -17,20 +17,12 @@ class Nav extends Component {
     render() {
         return (
             <div>
-
-                
                 <div className="container">
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#">Navbar</a>
-                </nav>
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                            <NavStyle><Link to="/movies"><li>Movies</li></Link></NavStyle>
+                        </nav>
+
                 </div>
-                {/* <NavStyle>
-                    
-                   <Link to="/movies"><li>Movies</li></Link>
-                    <li>Members</li>
-                    <li>Movies</li>
-                    <li>Test</li>
-                </NavStyle> */}
             </div>
         );
     }

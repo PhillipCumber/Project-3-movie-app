@@ -5,12 +5,16 @@ import styled from 'styled-components'
 
 let MovieStyle = styled.div`
 
-    background: red;
     display: flex;
-    justify-content: space-around;
-    font-size: 30px;
-    text-decoration: none;
-    text: green
+    font-size: 25px;
+    border: rigid;
+    background: blue;
+
+`
+
+let IndyMovie = styled.div`
+
+      margin-top: 10px;
 `
 
 class Movies extends Component {
@@ -40,16 +44,22 @@ class Movies extends Component {
     render() {
         return (
             <div>
-
-                <h1>hey watup fool
-                    
-                </h1>
                 
                 {this.state.movies.map((movie, i) => (
+                
+                    <MovieStyle className="big-contain">
 
-                    <MovieStyle key={movie._id}>
+                            <IndyMovie>
+                                    {movie.title}
+                            
 
-                        {movie.genre}
+                                <div key={movie._id}>
+
+                                    {movie.genre}
+                                </div>
+                            </IndyMovie>
+
+
                     </MovieStyle>
                  
                 ))}
