@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import styled from 'styled-components'
 
+let MovieStyle = styled.div`
 
-class Home extends Component {
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    text-decoration: none;
+    text: green
+`
+
+class Movies extends Component {
 
     state = {
 
@@ -18,7 +28,7 @@ class Home extends Component {
 
                 console.log(res)
                 this.setState({movies: res.data})
-                console.log(this.state.movies[0])
+                
              })
     }
 
@@ -31,14 +41,16 @@ class Home extends Component {
         return (
             <div>
 
-                <h1>hey watup fool</h1>
+                <h1>hey watup fool
+                    
+                </h1>
                 
-                {this.state.movies.map((movie) => (
+                {this.state.movies.map((movie, i) => (
 
-                    <div>
+                    <MovieStyle key={movie._id}>
 
                         {movie.title}
-                    </div>
+                    </MovieStyle>
                  
                 ))}
 
@@ -47,4 +59,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Movies;
