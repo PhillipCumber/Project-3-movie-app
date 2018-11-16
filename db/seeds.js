@@ -35,10 +35,43 @@ let movie1 = [
 
     {
 
-        title: 'Space Jam',
+        title: 'Coach Carter',
         img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
+        actors: 'Samuel Jackson',
+        description: 'Sam Jackson yelling',
+        rating: 5,
+        genre: 'Drama'
+    
+    },
+
+    {
+
+        title: 'Blue Hill Avenue',
+        img: '',
+        actors: 'Guy from that tyler perry show',
+        description: 'BET Classic',
+        rating: 4,
+        genre: 'Drama'
+    
+    },
+
+    {
+
+        title: 'Freddy v Jason',
+        img: '',
+        actors: 'The guy with the mask',
+        description: 'Freddy fighting Jason',
+        rating: 4,
+        genre: 'Horror'
+    
+    },
+
+    {
+
+        title: 'Air Bud',
+        img: '',
+        actors: 'A dog',
+        description: 'A dog is an athlete',
         rating: 5,
         genre: 'Sci-fi'
     
@@ -46,10 +79,21 @@ let movie1 = [
 
     {
 
-        title: 'Space Jam',
+        title: 'The Ring',
         img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
+        actors: 'Lil girl in the tv',
+        description: 'Jump the girl as she is coming out of the tv',
+        rating: 5,
+        genre: 'Horror'
+    
+    },
+
+    {
+
+        title: 'Land before Time',
+        img: '',
+        actors: 'Dinosaurs',
+        description: 'More dinosaurs',
         rating: 5,
         genre: 'Sci-fi'
     
@@ -57,56 +101,12 @@ let movie1 = [
 
     {
 
-        title: 'Space Jam',
+        title: 'More than a Game',
         img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
+        actors: 'Lebron James',
+        description: 'Lebron being fye',
         rating: 5,
-        genre: 'Sci-fi'
-    
-    },
-
-    {
-
-        title: 'Space Jam',
-        img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
-        rating: 5,
-        genre: 'Sci-fi'
-    
-    },
-
-    {
-
-        title: 'Space Jam',
-        img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
-        rating: 5,
-        genre: 'Sci-fi'
-    
-    },
-
-    {
-
-        title: 'Space Jam',
-        img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
-        rating: 5,
-        genre: 'Sci-fi'
-    
-    },
-
-    {
-
-        title: 'Space Jam',
-        img: '',
-        actors: 'Michael Jordan',
-        description: 'Michael Jordan being fye',
-        rating: 5,
-        genre: 'Sci-fi'
+        genre: 'Documentary'
     
     },
 
