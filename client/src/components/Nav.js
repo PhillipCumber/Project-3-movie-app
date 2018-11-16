@@ -9,23 +9,29 @@ let NavStyle = styled.div`
     justify-content: space-around;
     font-size: 30px;
     text-decoration: none;
-    text: green
     list-style-type: none;
+    padding-left: 25px;
 `
 
 class Nav extends Component {
     render() {
         return (
             <div>
-                <div className="container">
-                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                            <NavStyle><Link to="/movies"><li>Movies</li></Link></NavStyle>
-                        </nav>
+                        <NavStyle>
+                               
+                            <Link to="/movies">Movies</Link>
+                              <Link to="/members">Members</Link>
 
-                </div>
+                         </NavStyle>
+                
             </div>
         );
     }
 }
 
 export default Nav;
+
+{/* <Link to="/movies"><li>Movies</li></Link>
+                                <Link to="/members"><li>Members</li></Link> */}
+                                {/* <Link to="/movies"><li>Movies</li></Link>
+                                <Link to="/movies"><li>Movies</li></Link> */}

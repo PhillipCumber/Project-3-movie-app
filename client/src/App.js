@@ -13,6 +13,7 @@ class App extends Component {
               <Switch> 
 
                   <Route path="/movies" component={Movies}></Route>
+                  <Route path="/member" component={Movies}></Route>
 
 
               </Switch>
