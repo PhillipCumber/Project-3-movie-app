@@ -7,7 +7,13 @@ class Login extends Component {
         return (
             <div>
                 <h1>Login foo</h1>
-                <Link to="/movies">Movies</Link>
+                <form>
+
+                    <div>
+                        <label htmlFor="username">UserName:</label>
+                        <input type="text" name="username" />
+                    </div>
+                </form>
             </div>
         );
     }

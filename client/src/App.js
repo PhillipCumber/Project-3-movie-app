@@ -19,8 +19,6 @@ class App extends Component {
                   <Route exact path="/movies" component={Movies}></Route>
                   <Route exact path="/member" component={Movies}></Route>
                   <Route exact path="/mypage" component={Movies}></Route>
-                  <Route exact path="/member" component={Movies}></Route>
-
                   <Route path="/" component={Movies}></Route>
 
 
