@@ -19,8 +19,9 @@ class Nav extends Component {
             <div>
                         <NavStyle>
                                
+                            <Link to="/">Home</Link>
                             <Link to="/movies">Movies</Link>
-                              <Link to="/members">Members</Link>
+                            <Link to="/members">Members</Link>
 
                          </NavStyle>
                 
@@ -31,7 +32,3 @@ class Nav extends Component {
 
 export default Nav;
 
-{/* <Link to="/movies"><li>Movies</li></Link>
-                                <Link to="/members"><li>Members</li></Link> */}
-                                {/* <Link to="/movies"><li>Movies</li></Link>
-                                <Link to="/movies"><li>Movies</li></Link> */}

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import Movies from './components/Movies';
 import Nav from './components/Nav';
+import Login from './components/Login';
+import Splash from './components/Splash';
 
 class App extends Component {
   render() {
@@ -10,10 +12,15 @@ class App extends Component {
           <Router>
             <div>
               <Nav />
+              <Splash />
+            
               <Switch> 
 
-                  <Route path="/movies" component={Movies}></Route>
-                  <Route path="/member" component={Movies}></Route>
+                  <Route exact path="/movies" component={Movies}></Route>
+                  <Route exact path="/member" component={Movies}></Route>
+                  <Route exact path="/mypage" component={Movies}></Route>
+                  <Route path="/" component={Movies}></Route>
+
 
 
               </Switch>

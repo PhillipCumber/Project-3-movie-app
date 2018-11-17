@@ -28,6 +28,23 @@ class Movies extends Component {
     state = {
 
         movies: [],
+        newMovie: {
+
+            title: '',
+            img: '',
+            description: '',
+            actors: '',
+            rating: '',
+            genre: ''
+        }
+    }
+
+    handleChange = (event) => {
+
+        console.log('changeme')
+        let updateMovie = {...this.state.newMovie}
+        updateMovie[event.target.name] = event.target.value
+        this.setState({newMovie: updateMovie})
     }
 
     getAllMovies = () => {
@@ -79,10 +96,17 @@ class Movies extends Component {
                                 <button>Add</button>
                             </IndyMovie>
 
-
+                       
                     </MovieStyle>
+
+                   
                  
                 ))}
+
+                  <input type="text" name="movie"
+                         onChange={this.handleChange}
+                         value={this.state.newMovie.title}
+                    />
 
             </div>
         );
