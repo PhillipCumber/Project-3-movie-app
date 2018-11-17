@@ -22,6 +22,8 @@ class Nav extends Component {
                             <Link to="/">Home</Link>
                             <Link to="/movies">Movies</Link>
                             <Link to="/members">Members</Link>
+                            <Link to="/mypage">My Page</Link>
+
 
                          </NavStyle>
                 

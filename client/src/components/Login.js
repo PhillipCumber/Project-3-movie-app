@@ -65,7 +65,7 @@ class Login extends Component {
                     </div>
                     <div>
                         <label htmlFor="password">Password:</label>
-                        <input type="text" name="password" />
+                        <input type="text" name="password" onChange={this.handleChange}/>
                     </div>
 
                  <Link to="/movies"><button type="submit">Login</button></Link>
