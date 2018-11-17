@@ -40,21 +40,35 @@ class Login extends Component {
         this.getAllUsers()
     }
 
+    handleSubmit = (event) => {
+
+        event.preventDefault()
+        
+        axios.post('/api/members', this.state.newUser)
+            .then((res) => {
+
+                console.log(res.data)
+                res.redirect('/movies')
+            })
+    }
+
 
     render() {
         return (
             <div>
                 <h1>Login foo</h1>
-                <form>
+                <form onSubmit={this.handleSubmit}>
 
                     <div>
                         <label htmlFor="username">UserName:</label>
-                        <input type="text" name="username" />
+                        <input type="text" name="username" onChange={this.handleChange}/>
                     </div>
                     <div>
                         <label htmlFor="password">Password:</label>
                         <input type="text" name="password" />
                     </div>
+
+                 <Link to="/movies"><button type="submit">Login</button></Link>
                 </form>
             </div>
         );

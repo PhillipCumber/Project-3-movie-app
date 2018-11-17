@@ -6,7 +6,7 @@ let movieController = require('../controllers/movieController')
 ///routes for user model
 router.get('/', userController.index)
 router.get('/api/members', userController.show)
-router.post('/members', userController.create)
+router.post('/api/members', userController.create)
 
 
 ///routes for movie model
