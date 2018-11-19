@@ -4,6 +4,9 @@ import Movies from './components/Movies';
 import Nav from './components/Nav';
 import Login from './components/Login';
 import Splash from './components/Splash';
+import User from './components/User';
+import Mypage from './components/Mypage';
+
 
 class App extends Component {
   render() {
@@ -15,8 +18,8 @@ class App extends Component {
               <Switch> 
 
                   <Route exact path="/movies" component={Movies}></Route>
-                  <Route exact path="/members" component={Movies}></Route>
-                  <Route exact path="/mypage" component={Splash}></Route>
+                  <Route exact path="/members" component={User}></Route>
+                  <Route exact path="/mypage" component={Mypage}></Route>
                   <Route path="/" component={Login}></Route>
 
               </Switch>
