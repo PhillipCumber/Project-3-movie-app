@@ -19,6 +19,15 @@ let movieController = {
                 newMovie.save()
                 res.redirect(`/movies`)
               })
+    },
+
+    delete: (req, res) => {
+
+        Movie.findByIdAndRemove(req.params.movieId)
+              .then(() => {
+
+                res.redirect('/movies')
+              })
     }
 }
 
