@@ -17,11 +17,6 @@ let IndyMovie = styled.div`
       margin-top: 40px;
 `
 
-let PicSize = styled.img`
-
-        height: 50px;
-        width: 50px;
-`
 
 class Movies extends Component {
 
@@ -49,7 +44,7 @@ class Movies extends Component {
 
     getAllMovies = () => {
 
-        axios.get('/movies')
+        axios.get('/api/movies')
 
              .then((res) => {
 
@@ -62,6 +57,25 @@ class Movies extends Component {
     componentDidMount() {
 
         this.getAllMovies()
+        this.createMovie()
+    }
+
+    createMovie = () => {
+
+        axios.post('/api/movies', {
+
+            movies: this.state.movies
+        })
+            .then((res) => {
+
+                this.setState({movies: res.data})
+            })
+    }
+
+    handleSubmit = (event) => {
+
+        event.preventDefault()
+        this.createMovie()
     }
 
     render() {
@@ -103,10 +117,20 @@ class Movies extends Component {
                  
                 ))}
 
-                  <input type="text" name="movie"
-                         onChange={this.handleChange}
-                         value={this.state.newMovie.title}
+
+                    <form onSubmit={this.handleSubmit}>
+                        <div>
+
+                            <label htmlFor="title">Title</label>
+                            <input type="text" name="title"
+                                   onChange={this.handleChange}
+                                   value={this.state.newMovie.title}
                     />
+
+                        </div>
+                    
+                            <button type="submit">Add new Movie</button>
+                    </form>
 
             </div>
         );

@@ -12,9 +12,9 @@ router.post('/api/members', userController.create)
 
 ///routes for movie model
 
-router.get('/movies', movieController.show)
-router.post('/movies', movieController.create)
-router.delete('/movies/:movieId', movieController.delete)
+router.get('/api/movies', movieController.show)
+router.post('/api/movies', movieController.create)
+router.delete('/api/movies/:movieId', movieController.delete)
 
 
 

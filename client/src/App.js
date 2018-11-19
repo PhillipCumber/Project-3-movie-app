@@ -20,7 +20,8 @@ class App extends Component {
                   <Route exact path="/movies" component={Movies}></Route>
                   <Route exact path="/members" component={User}></Route>
                   <Route exact path="/mypage" component={Mypage}></Route>
-                  <Route path="/" component={Login}></Route>
+                  <Route exact path="/login" component={Login}></Route>
+                  <Route path="/" component={Splash}></Route>
 
               </Switch>
             </div>
