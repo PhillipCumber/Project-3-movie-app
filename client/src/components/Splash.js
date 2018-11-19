@@ -7,7 +7,8 @@ class Splash extends Component {
         return (
             <div>
                            
-                
+                <h1>hey wasup</h1>
+            
               
             </div>
         );
