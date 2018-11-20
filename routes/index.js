@@ -14,7 +14,8 @@ router.post('/members', userController.create)
 
 router.get('/movies', movieController.index)
 router.post('/movies', movieController.create)
-router.get('/movies/:movieId', userController.show)
+router.get('/movies/:movieId', movieController.show)
+router.patch('/movies/:movieId', movieController.update)
 router.delete('/movies/:movieId', movieController.delete)
 
 

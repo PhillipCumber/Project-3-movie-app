@@ -98,9 +98,7 @@ class Movies extends Component {
                  
                 ))}
 
-
-                    <NewMovie/>
-
+                <Link to="/newmovie"><button>Add new Movie</button></Link>
             </div>
         );
     }

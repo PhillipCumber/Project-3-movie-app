@@ -13,12 +13,18 @@ let movieController = {
 
     create: (req, res) => {
 
-        Movie.create(req.body)
-              .then((newMovie) => {
+        let movieId = req.params.movieId
+        Movie.findById(movieId) 
+             .then((movie) => {
 
-                newMovie.save()
-                res.redirect(`/movies`)
-              })
+                Movie.create(req.body)
+                     .then((movie) => {
+
+                        movie.save()
+                        res.send(movie)
+                        console.log(movie)
+                     })
+             })
     },
 
     show: (req, res) => {
@@ -29,6 +35,17 @@ let movieController = {
 
                 res.send(movie)
               })
+    },
+
+    update: (req, res) => {
+
+        let movieId = req.params.movieId
+        Movie.findByIdAndUpdate(movieId, req.body)
+                .then((updateInfo) => {
+
+                    updateInfo.save()
+                    res.send(updateInfo)
+                })
     },
 
     delete: (req, res) => {

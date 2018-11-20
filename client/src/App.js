@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Splash from './components/Splash';
 import User from './components/User';
 import Mypage from './components/Mypage';
+import NewMovie from './components/NewMovie';
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
                   <Route exact path="/movies" component={Movies}></Route>
                   <Route exact path="/members" component={User}></Route>
                   <Route exact path="/mypage" component={Mypage}></Route>
+                  <Route exact path="/newmovie" component={NewMovie}></Route>
                   <Route exact path="/login" component={Login}></Route>
                   <Route path="/" component={Splash}></Route>
 
