@@ -4,9 +4,11 @@ let userController = require('../controllers/userController')
 let movieController = require('../controllers/movieController')
 
 ///routes for user model
-router.get('/members', userController.index)
-// router.get('/api/members', userController.show)
-router.post('/members', userController.create)
+router.get('/users', userController.index)
+router.post('/users', userController.create)
+router.get('/users/:userId', userController.show)
+router.patch('/users/:userId', userController.update)
+router.delete('/users/:userId', userController.delete)
 
 
 

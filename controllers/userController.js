@@ -23,6 +23,27 @@ let userController = {
                 newUser.save()
                 res.redirect(`/members`)
             })
+    },
+
+    update: (req, res) => {
+
+        let userId = req.params.userId
+        User.findByIdAndUpdate(userId, req.body)
+            .then((updateUser) => {
+
+                updateUser.save()
+                res.send(update)
+            })
+    },
+
+    delete: (req, res) => {
+
+        let userId = req.params.userId
+        User.findByIdAndDelete(userId)
+            .then(() => {
+
+                console.log('deleted')
+            })
     }
 }
 
