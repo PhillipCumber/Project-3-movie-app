@@ -2,7 +2,7 @@ let Movie = require('../models/Movie')
 
 let movieController = {
 
-    show: (req, res) => {
+    index: (req, res) => {
 
         Movie.find({})
             .then((movies) => {
@@ -18,6 +18,16 @@ let movieController = {
 
                 newMovie.save()
                 res.redirect(`/movies`)
+              })
+    },
+
+    show: (req, res) => {
+
+        let movieId = req.params.movieId
+        Movie.findById(movieId)
+              .then((movie) => {
+
+                res.send(movie)
               })
     },
 

@@ -12,8 +12,9 @@ router.post('/members', userController.create)
 
 ///routes for movie model
 
-router.get('/movies', movieController.show)
+router.get('/movies', movieController.index)
 router.post('/movies', movieController.create)
+router.get('/movies/:movieId', userController.show)
 router.delete('/movies/:movieId', movieController.delete)
 
 
