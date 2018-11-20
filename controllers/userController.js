@@ -3,12 +3,6 @@ let User = require('../models/User')
 let userController = {
 
     index: (req, res) => {
-
-        res.send('hey')
-    },
-
-    show: (req, res) => {
-
         User.find({})
             .then((user) => {
 
@@ -16,14 +10,19 @@ let userController = {
             })
     },
 
+    show: (req, res) => {
+        res.send({message: 'not yet implemented'})
+
+    },
+
     create: (req, res) => {
 
         User.create(req.body)
-              .then((newUser) => {
+            .then((newUser) => {
 
                 newUser.save()
                 res.redirect(`/members`)
-              })
+            })
     }
 }
 

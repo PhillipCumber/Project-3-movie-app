@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
+import NewMovie from './NewMovie';
 
 let MovieStyle = styled.div`
 
@@ -57,26 +58,9 @@ class Movies extends Component {
     componentDidMount() {
 
         this.getAllMovies()
-        this.createMovie()
+
     }
 
-    createMovie = () => {
-
-        axios.post('/api/movies', {
-
-            movies: this.state.movies
-        })
-            .then((res) => {
-
-                this.setState({movies: res.data})
-            })
-    }
-
-    handleSubmit = (event) => {
-
-        event.preventDefault()
-        this.createMovie()
-    }
 
     render() {
         return (
@@ -106,31 +90,16 @@ class Movies extends Component {
                                 <div>
                                     {movie.rating}
                                 </div>
-
-                                <button>Add</button>
+ 
                             </IndyMovie>
-
                        
                     </MovieStyle>
-
                    
                  
                 ))}
 
 
-                    <form onSubmit={this.handleSubmit}>
-                        <div>
-
-                            <label htmlFor="title">Title</label>
-                            <input type="text" name="title"
-                                   onChange={this.handleChange}
-                                   value={this.state.newMovie.title}
-                    />
-
-                        </div>
-                    
-                            <button type="submit">Add new Movie</button>
-                    </form>
+                    <NewMovie/>
 
             </div>
         );
