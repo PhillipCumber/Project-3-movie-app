@@ -4,12 +4,19 @@ import axios from 'axios'
 
 class Mypage extends Component {
 
+    state = {
+
+        user: []
+    }
+
     getUser = () => {
 
-        axios.get('/api/members')
+        axios.get('/api/users')
              .then((res) => {
 
                 console.log(res)
+                this.setState({user: res.data})
+
              })
 
     }
@@ -22,7 +29,10 @@ class Mypage extends Component {
     render() {
         return (
             <div>
-                <h1>My page</h1>
+              {this.state.user.map((user) => (
+
+                  <h1>{user.name}</h1>
+              ))}
             </div>
         );
     }

@@ -11,7 +11,13 @@ let userController = {
     },
 
     show: (req, res) => {
-        res.send({message: 'not yet implemented'})
+        
+        let userId = req.params.userId
+        User.findById(userId)
+            .then((user) => {
+
+                res.send(user)
+            })
 
     },
 
@@ -21,7 +27,7 @@ let userController = {
             .then((newUser) => {
 
                 newUser.save()
-                res.redirect(`/members`)
+                
             })
     },
 
